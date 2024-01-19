@@ -1,0 +1,21 @@
+
+server:
+  port: 8085
+
+spring:
+  jackson:
+    default-property-inclusion: non_null
+  datasource:
+    url: jdbc:mysql://localhost:3306/pagination
+    password: 12345678
+    username: root
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8InnoDBDialect
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
